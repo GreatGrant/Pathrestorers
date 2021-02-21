@@ -21,9 +21,12 @@ public class SplashActivity extends AppCompatActivity {
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
+
+
+
+
+
         new Handler().postDelayed(() -> {
-            LottieAnimationView loadingAnimation = findViewById(R.id.drone_anim);
-            loadingAnimation.playAnimation();
             startActivity(new Intent(com.gralliams.pathrestorers.SplashActivity.this, MainActivity.class));
             finish();
         }, SPLASH_TIMEOUT);

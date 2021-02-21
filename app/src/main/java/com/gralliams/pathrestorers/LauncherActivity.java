@@ -24,7 +24,7 @@ public class LauncherActivity extends Activity {
 
         }else{
 
-            startActivity(new Intent(getApplicationContext(), MainActivity.class));
+            startActivity(new Intent(getApplicationContext(), SplashActivity.class));
         }
         finish();
 
